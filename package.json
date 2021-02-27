@@ -2,9 +2,9 @@
   "name": "vanillajs-file-uploader",
   "version": "1.0.0",
   "description": "File upload implementation using only Vanilla JS",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "parcel index.html"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/H29A/vanillajs-file-uploader/issues"
   },
-  "homepage": "https://github.com/H29A/vanillajs-file-uploader#readme"
+  "homepage": "https://github.com/H29A/vanillajs-file-uploader#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
 }

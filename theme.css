@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+    background: #666;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    padding-top: 5rem;
+    width: 800px;
+}
+
+.card {
+    border-radius: 5px;
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 2px 3px 1px rgba(0, 0, 0, .2);
+}
+
+.btn {
+    color: #42b983;
+    background: #fff;
+    border: 1px solid #42b983;
+    position: relative;
+    border-radius: 99px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.22s;
+    margin-right: 1rem;
+}
+
+.btn.primary {
+    background: #42b983;
+    color: #fff;
+}
+
+.btn:active {
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+input[type=file] {
+    display: none;
+}
+
+.preview {
+    display: flex;
+    flex-wrap: wrap;
+    padding: .5rem;
+}
+
+.preview-image {
+    display: flex;
+    position: relative;
+    margin-bottom: .5rem;
+    margin-right: .5rem;
+    overflow: hidden;
+}
+
+.preview-image:hover .preview-remove {
+    opacity: 1;
+}
+
+.preview-image:hover .preview-info {
+    bottom: 0;
+}
+
+.preview-image.removing {
+    transform: scale(0);
+    transition: transform .3s;
+}
+
+.preview-image img {
+    width: 180px;
+    height: auto;
+}
+
+.preview-remove {
+    opacity: 0;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-weight: bold;
+    background: rgba(255, 255, 255, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: opacity 0.22ms;
+}
+
+.preview-info {
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+    left: 0;
+    height: 25px;
+    font-size: .8rem;
+    background: rgba(255, 255, 255, .5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: bottom 0.22s;
+    padding: 0 5px;
+}

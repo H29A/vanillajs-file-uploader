@@ -3,3 +3,9 @@
 
 # Dependency directories
 node_modules/
+
+# Builds
+dist/
+
+# Parcel cache
+.cache/
